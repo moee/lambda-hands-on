@@ -1,0 +1,22 @@
+{
+    "Records": [
+        {
+            "EventVersion": "1.0",
+            "EventSubscriptionArn": "",
+            "EventSource": "aws:sns",
+            "Sns": {
+                "SignatureVersion": "1",
+                "Timestamp": "2016-03-30T20:27:28.487Z",
+                "Signature": "",
+                "SigningCertUrl": "",
+                "MessageId": "",
+                "Message": "{\"vote\": \"1\", \"topic_id\": \"AkwUr2MH7l\"}",
+                "MessageAttributes": {},
+                "Type": "Notification",
+                "UnsubscribeUrl": "",
+                "TopicArn": "",
+                "Subject": null
+            }
+        }
+    ]
+}

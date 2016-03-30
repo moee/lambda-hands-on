@@ -1,0 +1,7 @@
+{
+  "name": "aws-meetup-vienna",
+  "custom": {},
+  "plugins": [
+    "serverless-cors-plugin"
+  ]
+}
