@@ -23,10 +23,20 @@ I built a Docker image that contains an encapsulated environment that includes e
 9. Adjust `this.url` in `client/dist/index.js`
 10. Run `sls static deploy` to deploy the static content
 
+### Bonus: Running lambdash
+
+[Lambdash](https://alestic.com/2015/06/aws-lambda-shell-2/) let's you execute arbitrary shell commands in lambda to explore the environment. 
+
+1. Clone [lambdash](https://github.com/alestic/lambdash) somewhere inside the demo shell
+2. cd into it
+3. run `bash ./lambdash-install`
+4. Execute commands with `./lambdash COMMAND`
+5. When you're done delete the lambda function with `./lambdash-uninstall`
+
 ## Cleaning up
 
-After you're done don't forget to remove all resources from AWS (`sls project remove`), otherwise they will incur costs!
+After you're done don't forget to remove all resources from AWS (`sls project remove`), otherwise they will incur costs! The S3 bucket cannot be removed automatically, so you have to do that manually.
 
 ## Acknowledgements
 
-* Thanks to @karlhorky and @sanjabonic for building the client (https://github.com/karlhorky/voting-app-aws-demo)
+* Thanks to [@karlhorky](https://github.com/karlhorky) and [@sanjabonic](https://github.com/sanjabonic) for [building the client] (https://github.com/karlhorky/voting-app-aws-demo)
