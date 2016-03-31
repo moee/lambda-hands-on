@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+IMAGE_NAME=serverless_demo_shell
+docker build -t $IMAGE_NAME . || exit 1
+docker run -v "$(pwd)":/usr/src/app -w /usr/src/app -it $IMAGE_NAME ln -s /node_modules /usr/src/app/voting-app/node_modules
+docker run -v "$(pwd)":/usr/src/app -w /usr/src/app -it $IMAGE_NAME /bin/bash

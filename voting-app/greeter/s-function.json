@@ -22,7 +22,7 @@
       "requestParameters": {},
       "requestTemplates": {
         "application/json": {
-          "name" : "$input.params('name')"
+          "name": "$input.params('name')"
         }
       },
       "responses": {

@@ -40,10 +40,12 @@
         }
       }
     },
-     {
+    {
       "path": "votes",
       "method": "OPTIONS",
+      "type": "AWS",
       "authorizationType": "none",
+      "authorizerFunction": false,
       "apiKeyRequired": false,
       "requestParameters": {},
       "requestTemplates": {
@@ -70,7 +72,7 @@
     "SERVERLESS_PROJECT": "${project}",
     "SERVERLESS_STAGE": "${stage}",
     "SERVERLESS_REGION": "${region}",
-    "SERVERLESS_SNS_TOPIC": "arn:aws:sns:${region}:${accountId}:aws-meetup-vienna-dev-vote-casted"
+    "SERVERLESS_SNS_TOPIC": "arn:aws:sns:${region}:${accountId}:${project}-${stage}-vote-casted"
   },
   "vpc": {
     "securityGroupIds": [],

@@ -40,10 +40,12 @@
         }
       }
     },
-     {
+    {
       "path": "topics",
       "method": "OPTIONS",
+      "type": "AWS",
       "authorizationType": "none",
+      "authorizerFunction": false,
       "apiKeyRequired": false,
       "requestParameters": {},
       "requestTemplates": {
