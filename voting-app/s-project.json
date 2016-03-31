@@ -1,7 +1,12 @@
 {
   "name": "aws-meetup-vienna",
-  "custom": {},
+  "custom": {
+    "client": {
+      "bucketName": "${project}-${stage}-www"
+    }
+  },
   "plugins": [
-    "serverless-cors-plugin"
+    "serverless-cors-plugin",
+    "serverless-client-s3"
   ]
 }
