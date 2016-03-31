@@ -26,3 +26,7 @@ I built a Docker image that contains an encapsulated environment that includes e
 ## Cleaning up
 
 After you're done don't forget to remove all resources from AWS (`sls project remove`), otherwise they will incur costs!
+
+## Acknowledgements
+
+* Thanks to @karlhorky and @sanjabonic for building the client (https://github.com/karlhorky/voting-app-aws-demo)
