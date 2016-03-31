@@ -15,13 +15,14 @@ I built a Docker image that contains an encapsulated environment that includes e
     2. In the next step, select Existing Profile and pick `default`
 6. `sls variables set`
     1. Name: accountId, Value: *YOUR AWS ACCOUNT ID*, e.g. 1234567890
-7. `sls resources deploy`
+7. `sls resources deploy` - This deploys the cloudformation template to aws
+8. `sls dash deploy` - Deploy functions and/or endpoints
     1. You might want to start with the greeter to verify everything is working
-8. If you deploy the votes app, manually subscribe the lambda function `aws-meetup-vienna-votes-trigger`
+9. If you deploy the votes app, manually subscribe the lambda function `aws-meetup-vienna-votes-trigger`
     1. As Version select the appropriate application stage (e.g. `demo`)
     2. There is a SNS plugin that is supposed to do that, but it doesn't work right now with sls 0.5.1
-9. Adjust `this.url` in `client/dist/index.js`
-10. Run `sls static deploy` to deploy the static content
+10. Adjust `this.url` in `client/dist/index.js`
+11. Run `sls static deploy` to deploy the static content
 
 ### Bonus: Running lambdash
 
